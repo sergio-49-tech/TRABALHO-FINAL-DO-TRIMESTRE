@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; background: #eef0f3; color: #141824; line-height: 1.5; overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+
+.estrutura-site { width: 100%; min-height: 100vh; background: #f6f6fa; }
+.cabecalho { position: sticky; top: 0; z-index: 20; background: #fff; border-bottom: 1px solid #d7d9dd; }
+.conteudo-cabecalho { min-height: 68px; padding: 8px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.area-marca { display: flex; align-items: center; gap: 8px; }
+.area-marca img { width: 78px; height: 44px; object-fit: contain; }
+.botao-notificacao { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; border: 1px solid #d7d9dd; border-radius: 50%; background: #fff; color: #167cca; box-shadow: 0 3px 8px #1418241f; }
+.usuario { min-width: 108px; padding: 6px 10px; display: flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid #d7d9dd; border-radius: 22px; background: #fff; box-shadow: 0 3px 8px #1418241f; }
+.usuario strong, .usuario small { display: block; line-height: 1.1; }
+.usuario strong { font-size: 10px; }
+.usuario small { margin-top: 2px; font-size: 9px; color: #dda55f; letter-spacing: .08em; }
+.menu-computador { display: none; }
+.conteudo-principal { padding: 12px 12px 96px; }
+.painel-principal { padding: 16px; background: #d9d9d9; border-radius: 8px; }
+.caixa-pagina { padding: 16px; background: #fff; border: 1px solid #d7d9dd; border-radius: 12px; }
+.texto-pequeno { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .22em; color: #727272; }
+.titulo-pagina { margin-top: 8px; font-size: 26px; font-weight: 800; line-height: 1.25; letter-spacing: .08em; text-transform: uppercase; }
+.subtitulo-pagina { margin-top: 8px; font-size: 13px; color: #666d78; }
+.titulo-secao { margin: 20px 0 10px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.titulo-secao h2 { font-size: 11px; text-transform: uppercase; letter-spacing: .16em; }
+.titulo-secao a { font-size: 9px; font-weight: 700; color: #666d78; text-transform: uppercase; letter-spacing: .12em; }
+
+.boas-vindas { min-height: 108px; position: relative; overflow: hidden; }
+.boas-vindas::after { content: '✈'; position: absolute; right: 10px; top: 18px; font-size: 84px; line-height: 1; color: #111; transform: rotate(-18deg); }
+.boas-vindas > div { position: relative; z-index: 2; max-width: 70%; }
+.boas-vindas h1 { margin-top: 8px; font-size: 26px; font-weight: 800; line-height: 1.25; letter-spacing: .08em; text-transform: uppercase; }
+.cartao-reserva { position: relative; z-index: 3; margin-top: -2px; padding: 16px; background: #fff; border-radius: 14px; box-shadow: 0 3px 8px #14182414; }
+.campo { min-width: 0; margin-bottom: 14px; }
+.campo label { display: block; margin-bottom: 6px; font-size: 10px; font-weight: 700; letter-spacing: .12em; color: #6b6b6b; }
+.campo input, .campo select { width: 100%; min-height: 44px; padding: 10px 12px; border: 1px solid #cfd3d8; border-radius: 7px; background: #fff; color: #141824; outline: none; min-width: 0; }
+.campo input:focus, .campo select:focus { border-color: #167cca; }
+.linha-campos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.botao-principal, .botao-selecionar, .atalho-pequeno { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 7px; font-weight: 800; text-align: center; transition: .2s; }
+.botao-principal { width: 100%; padding: 13px 15px; background: #141824; color: #fff; font-size: 10px; text-transform: uppercase; letter-spacing: .14em; }
+.botao-principal:hover, .botao-selecionar:hover, .atalho-pequeno:hover { transform: translateY(-2px); }
+.lista-viagens, .atalhos, .grade-clima, .lista-aeronaves, .grade-pagamento, .grade-viagens { display: grid; gap: 12px; }
+.lista-viagens { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cartao-viagem { min-width: 0; min-height: 108px; padding: 13px; background: #fff; border: 1px solid #d5d5d5; border-radius: 14px; }
+.situacao-viagem { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 10px; }
+.situacao-concluida, .situacao-pendente, .situacao-cancelada { display: inline-block; padding: 3px 6px; border-radius: 4px; font-size: 8px; font-weight: 800; letter-spacing: .08em; }
+.situacao-concluida { background: #d6f6d3; color: #26813a; }
+.situacao-pendente { background: #fff1cf; color: #966a18; }
+.situacao-cancelada { background: #f8d8d8; color: #9b3131; }
+.cartao-viagem time, .cartao-viagem small { font-size: 8px; color: #6a6a6a; }
+.cartao-viagem h3 { margin: 5px 0; font-size: 11px; letter-spacing: .08em; }
+.cartao-viagem p { font-size: 9px; color: #686868; }
+.cartao-membro { margin-top: 12px; padding: 15px; display: flex; align-items: center; justify-content: space-between; gap: 18px; background: #202020; color: #fff; border-radius: 12px; }
+.cartao-membro small { font-size: 8px; letter-spacing: .14em; }
+.cartao-membro h2 { font-size: 15px; letter-spacing: .08em; }
+.selo-vip { display: inline-block; margin-top: 6px; padding: 3px 7px; border-radius: 10px; background: #dda55f; color: #141824; font-size: 8px; font-weight: 800; }
+.milhas { text-align: right; }
+.milhas strong { display: block; font-size: 22px; letter-spacing: .08em; }
+.atalhos { margin-top: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.atalhos a { min-height: 86px; padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; background: #fff; border-radius: 9px; text-align: center; }
+.atalhos span { font-size: 26px; }
+.atalhos strong { font-size: 9px; letter-spacing: .08em; }
+.grade-clima { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cartao-clima { padding: 12px; background: #fff; border: 1px solid #d7d9dd; border-radius: 10px; }
+.cartao-clima.recomendado { border: 2px solid #68a86f; }
+.cartao-clima > div { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.cartao-clima h3 { font-size: 11px; }
+.cartao-clima span { font-size: 24px; }
+.cartao-clima p { margin: 8px 0; font-size: 9px; color: #646b74; }
+.cartao-clima small { display: inline-block; padding: 4px 7px; border-radius: 4px; font-size: 8px; font-weight: 800; }
+.clima-bom { background: #d9f3dd; color: #2f7e42; }
+.clima-atencao { background: #fff0cf; color: #936816; }
+.notificacoes article { margin-top: 8px; padding: 10px 12px; display: flex; gap: 10px; align-items: center; background: #fff; border: 1px solid #d7d9dd; border-radius: 9px; }
+.notificacoes article > span { font-size: 20px; }
+.notificacoes strong { font-size: 10px; }
+.notificacoes p { font-size: 9px; color: #666d78; }
+
+.linha-rota { padding: 10px 14px; background: #fff; border-bottom: 1px solid #141824; }
+.linha-rota p { font-size: 10px; font-weight: 700; }
+.categorias { margin: 0 0 12px; padding: 5px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; background: #ddd; border-radius: 10px; }
+.categorias a { padding: 10px 5px; border-radius: 8px; text-align: center; font-size: 8px; }
+.categorias a.ativo, .categorias a:hover { background: #fff; }
+.secao-aeronaves { margin-bottom: 22px; scroll-margin-top: 90px; }
+.titulo-lista { margin: 10px 0; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; }
+.lista-aeronaves { grid-template-columns: 1fr; }
+.cartao-aeronave { padding: 8px; display: grid; grid-template-columns: 92px 1fr; gap: 10px; align-items: center; background: #fff; border: 1px solid #aeb2b7; border-radius: 9px; }
+.cartao-aeronave img, .imagem-icone { width: 92px; height: 76px; border-radius: 8px; }
+.cartao-aeronave img { object-fit: cover; }
+.imagem-icone { display: flex; align-items: center; justify-content: center; background: #eef0f3; font-size: 38px; }
+.cartao-aeronave h2 { margin-bottom: 5px; font-size: 11px; text-transform: uppercase; }
+.cartao-aeronave p { margin-top: 2px; font-size: 9px; font-weight: 600; }
+.preco { display: block; margin-top: 4px; color: #167cca; font-size: 10px; }
+.botao-selecionar { margin-top: 6px; padding: 6px 9px; background: #141824; color: #fff; font-size: 8px; }
+
+.grade-pagamento, .grade-viagens { grid-template-columns: 1fr; }
+.cartao-pagamento, .cartao-informacao { padding: 15px; background: #fff; border: 1px solid #d7d9dd; border-radius: 11px; }
+.resumo-pagamento h1 { margin: 8px 0 12px; font-size: 24px; }
+.resumo-pagamento p { margin: 6px 0; font-size: 11px; color: #5f6670; }
+.valor-total { margin-top: 16px; font-size: 28px; font-weight: 800; color: #167cca; }
+.cartao-pagamento h2, .cartao-informacao h2 { margin-bottom: 12px; font-size: 15px; }
+.opcoes-pagamento { margin: 12px 0 16px; display: grid; gap: 8px; }
+.opcoes-pagamento label, .confirmacao { padding: 11px; display: flex; align-items: center; gap: 8px; background: #f6f6fa; border: 1px solid #d7d9dd; border-radius: 8px; font-size: 10px; }
+.confirmacao { margin-bottom: 14px; }
+.cartao-informacao h2 { margin: 10px 0 6px; }
+.cartao-informacao p, .cartao-informacao small { display: block; margin-top: 5px; font-size: 10px; color: #606771; }
+.atalho-pequeno { margin-top: 10px; padding: 7px 9px; background: #167cca; color: #fff; font-size: 8px; }
+
+.rodape { padding: 18px 12px 92px; text-align: center; font-size: 9px; color: #777; }
+.menu-celular { position: fixed; right: 8px; bottom: 8px; left: 8px; z-index: 30; display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
+.menu-celular a { min-height: 58px; padding: 7px 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; background: #ddd; border-radius: 8px; font-size: 8px; text-align: center; }
+.menu-celular span { font-size: 19px; }
+.menu-celular a.ativo { background: #141824; color: #fff; }
+
+@media (min-width: 700px) {
+    .conteudo-principal { padding: 18px 24px 36px; }
+    .conteudo-cabecalho { max-width: 1100px; margin: auto; }
+    .grade-clima { grid-template-columns: repeat(3, 1fr); }
+    .lista-aeronaves, .grade-viagens { grid-template-columns: repeat(2, 1fr); }
+    .grade-pagamento { grid-template-columns: .9fr 1.1fr; }
+    .rodape { padding-bottom: 26px; }
+    .menu-celular { display: none; }
+    .menu-computador { display: flex; align-items: center; gap: 4px; }
+    .menu-computador a { padding: 8px 10px; border-radius: 7px; font-size: 10px; font-weight: 700; }
+    .menu-computador a:hover, .menu-computador a.ativo { background: #141824; color: #fff; }
+}
+
+@media (min-width: 1000px) {
+    .conteudo-principal { max-width: 1100px; margin: auto; }
+    .grade-painel { display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px; }
+    .cartao-membro { margin-top: 0; }
+    .lista-aeronaves { grid-template-columns: repeat(2, 1fr); }
+    .titulo-pagina, .boas-vindas h1 { font-size: 30px; }
+}
