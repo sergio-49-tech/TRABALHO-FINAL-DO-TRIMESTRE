@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagamento da reserva de voo pela Aeris.">
+    <title>Aeris | Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="estrutura-site">
+        <header class="cabecalho">
+            <div class="conteudo-cabecalho">
+                <div class="area-marca">
+                    <a href="index.html"><img src="assets/img/logo-aeris.png" alt="Logo da Aeris"></a>
+                    <a class="botao-notificacao" href="index.html#notificacoes" aria-label="Abrir notificações">🔔</a>
+                </div>
+
+                <nav class="menu-computador" aria-label="Navegação principal">
+                    <a href="index.html">Início</a>
+                    <a href="reservar.html">Agendamento</a>
+                    <a href="aeronaves.html">Aeronaves</a>
+                    <a href="viagens.html">Viagens</a>
+                </nav>
+
+                <a class="usuario" href="index.html#membro">
+                    <span>👤</span>
+                    <div><strong>Sérgio Luiz</strong><small>VIP</small></div>
+                </a>
+            </div>
+        </header>
+
+        <main class="conteudo-principal">
+            <section class="grade-pagamento">
+                <article class="cartao-pagamento resumo-pagamento">
+                    <span class="texto-pequeno">Resumo da reserva</span>
+                    <h1>SP → RJ</h1>
+                    <p><strong>Aeronave:</strong> King Air B200</p>
+                    <p><strong>Passageiros:</strong> 2</p>
+                    <p><strong>Data:</strong> 20/09/2026</p>
+                    <p><strong>Horário:</strong> 09:30</p>
+                    <p><strong>Milhas previstas:</strong> +1.890</p>
+                    <div class="valor-total">R$ 18.900</div>
+                </article>
+
+                <article class="cartao-pagamento">
+                    <h2>Forma de pagamento</h2>
+                    <form action="viagens.html">
+                        <div class="opcoes-pagamento">
+                            <label><input type="radio" name="pagamento" value="pix" required> PIX</label>
+                            <label><input type="radio" name="pagamento" value="cartao"> Cartão de crédito</label>
+                            <label><input type="radio" name="pagamento" value="milhas"> Milhas + cartão</label>
+                        </div>
+
+                        <div class="campo">
+                            <label for="cupom">Cupom</label>
+                            <input type="text" id="cupom" name="cupom" placeholder="Código promocional">
+                        </div>
+
+                        <label class="confirmacao">
+                            <input type="checkbox" required>
+                            Confirmo que os dados da reserva estão corretos.
+                        </label>
+
+                        <button class="botao-principal" type="submit">Confirmar pagamento</button>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <nav class="menu-celular" aria-label="Navegação para celular">
+            <a href="index.html"><span>⌂</span>início</a>
+            <a href="reservar.html"><span>✈</span>agendamento</a>
+            <a href="aeronaves.html"><span>▤</span>aeronaves</a>
+            <a href="viagens.html"><span>▣</span>viagens</a>
+        </nav>
+    </div>
+</body>
+</html>
