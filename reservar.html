@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agendamento de viagem aérea pela Aeris.">
+    <title>Aeris | Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="estrutura-site">
+        <header class="cabecalho">
+            <div class="conteudo-cabecalho">
+                <div class="area-marca">
+                    <a href="index.html"><img src="assets/img/logo-aeris.png" alt="Logo da Aeris"></a>
+                    <a class="botao-notificacao" href="index.html#notificacoes" aria-label="Abrir notificações">🔔</a>
+                </div>
+
+                <nav class="menu-computador" aria-label="Navegação principal">
+                    <a href="index.html">Início</a>
+                    <a class="ativo" href="reservar.html">Agendamento</a>
+                    <a href="aeronaves.html">Aeronaves</a>
+                    <a href="viagens.html">Viagens</a>
+                </nav>
+
+                <a class="usuario" href="index.html#membro">
+                    <span>👤</span>
+                    <div><strong>Sérgio Luiz</strong><small>VIP</small></div>
+                </a>
+            </div>
+        </header>
+
+        <main class="conteudo-principal">
+            <section class="caixa-pagina">
+                <span class="texto-pequeno">Nova viagem</span>
+                <h1 class="titulo-pagina">Agendamento de voo</h1>
+                <p class="subtitulo-pagina">Preencha os dados da viagem para encontrar as aeronaves disponíveis.</p>
+
+                <form action="aeronaves.html">
+                    <div class="campo">
+                        <label for="origem">Origem</label>
+                        <input type="text" id="origem" name="origem" placeholder="Cidade ou aeroporto" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="destino">Destino</label>
+                        <input type="text" id="destino" name="destino" placeholder="Cidade ou aeroporto" required>
+                    </div>
+
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="ida">Data da ida</label>
+                            <input type="date" id="ida" name="ida" required>
+                        </div>
+                        <div class="campo">
+                            <label for="volta">Data da volta</label>
+                            <input type="date" id="volta" name="volta">
+                        </div>
+                    </div>
+
+                    <div class="linha-campos">
+                        <div class="campo">
+                            <label for="passageiros">Passageiros</label>
+                            <input type="number" id="passageiros" name="passageiros" min="1" max="20" value="2" required>
+                        </div>
+                        <div class="campo">
+                            <label for="bagagens">Bagagens</label>
+                            <input type="number" id="bagagens" name="bagagens" min="0" max="30" value="2">
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="categoria">Categoria desejada</label>
+                        <select id="categoria" name="categoria">
+                            <option>Turbo-hélice</option>
+                            <option>Jato privado</option>
+                            <option>Helicóptero</option>
+                            <option>Ver todas as opções</option>
+                        </select>
+                    </div>
+
+                    <button class="botao-principal" type="submit">Buscar aeronaves</button>
+                </form>
+            </section>
+
+            <div class="titulo-secao">
+                <h2>Previsão para a viagem</h2>
+            </div>
+
+            <section class="grade-clima">
+                <article class="cartao-clima recomendado">
+                    <div><h3>Quarta</h3><span>☀️</span></div>
+                    <p>24°C • vento leve</p>
+                    <small class="clima-bom">MELHOR DIA</small>
+                </article>
+                <article class="cartao-clima">
+                    <div><h3>Quinta</h3><span>🌤️</span></div>
+                    <p>22°C • tempo estável</p>
+                    <small class="clima-bom">BOM</small>
+                </article>
+            </section>
+        </main>
+        <nav class="menu-celular" aria-label="Navegação para celular">
+            <a href="index.html"><span>⌂</span>início</a>
+            <a class="ativo" href="reservar.html"><span>✈</span>agendamento</a>
+            <a href="aeronaves.html"><span>▤</span>aeronaves</a>
+            <a href="viagens.html"><span>▣</span>viagens</a>
+        </nav>
+    </div>
+</body>
+</html>
