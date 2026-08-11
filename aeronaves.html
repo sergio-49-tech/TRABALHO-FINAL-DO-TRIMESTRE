@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seleção de aeronaves disponíveis na Aeris.">
+    <title>Aeris | Aeronaves</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="estrutura-site">
+        <header class="cabecalho">
+            <div class="conteudo-cabecalho">
+                <div class="area-marca">
+                    <a href="index.html"><img src="assets/img/logo-aeris.png" alt="Logo da Aeris"></a>
+                    <a class="botao-notificacao" href="index.html#notificacoes" aria-label="Abrir notificações">🔔</a>
+                </div>
+
+                <nav class="menu-computador" aria-label="Navegação principal">
+                    <a href="index.html">Início</a>
+                    <a href="reservar.html">Agendamento</a>
+                    <a class="ativo" href="aeronaves.html">Aeronaves</a>
+                    <a href="viagens.html">Viagens</a>
+                </nav>
+
+                <a class="usuario" href="index.html#membro">
+                    <span>👤</span>
+                    <div><strong>Sérgio Luiz</strong><small>VIP</small></div>
+                </a>
+            </div>
+        </header>
+
+        <div class="linha-rota">
+            <p>✈ rota<br><strong>SP para RJ</strong></p>
+        </div>
+
+        <main class="conteudo-principal">
+            <nav class="categorias" aria-label="Categorias de aeronaves">
+                <a href="#helicopteros">HELICÓPTEROS</a>
+                <a class="ativo" href="#turbo-helices">TURBO-HÉLICES</a>
+                <a href="#jatos">JATOS PRIVADOS</a>
+            </nav>
+
+            <section class="secao-aeronaves" id="turbo-helices">
+                <h1 class="titulo-lista">Turbo-hélices disponíveis</h1>
+
+                <div class="lista-aeronaves">
+                    <article class="cartao-aeronave">
+                        <img src="assets/img/king-air-b200.jpg" alt="Aeronave King Air B200">
+                        <div>
+                            <h2>King Air B200</h2>
+                            <p>7 a 9 passageiros</p>
+                            <p>530 km/h</p>
+                            <strong class="preco">R$ 18.900</strong>
+                            <a class="botao-selecionar" href="pagamentos.html">Selecionar</a>
+                        </div>
+                    </article>
+
+                    <article class="cartao-aeronave">
+                        <img src="assets/img/pilatus-pc12.jpg" alt="Aeronave Pilatus PC12">
+                        <div>
+                            <h2>Pilatus PC12</h2>
+                            <p>Até 9 passageiros</p>
+                            <p>530 km/h</p>
+                            <strong class="preco">R$ 21.300</strong>
+                            <a class="botao-selecionar" href="pagamentos.html">Selecionar</a>
+                        </div>
+                    </article>
+
+                    <article class="cartao-aeronave">
+                        <img src="assets/img/cessna-caravan.jpg" alt="Aeronave Cessna Caravan">
+                        <div>
+                            <h2>Cessna Caravan</h2>
+                            <p>Até 9 passageiros</p>
+                            <p>320 km/h</p>
+                            <strong class="preco">R$ 14.600</strong>
+                            <a class="botao-selecionar" href="pagamentos.html">Selecionar</a>
+                        </div>
+                    </article>
+
+                    <article class="cartao-aeronave">
+                        <img src="assets/img/king-air-c90.jpg" alt="Aeronave King Air C90GTX">
+                        <div>
+                            <h2>King Air C90GTX</h2>
+                            <p>7 a 8 passageiros</p>
+                            <p>500 km/h</p>
+                            <strong class="preco">R$ 16.800</strong>
+                            <a class="botao-selecionar" href="pagamentos.html">Selecionar</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="secao-aeronaves" id="helicopteros">
+                <h2 class="titulo-lista">Helicópteros</h2>
+                <div class="lista-aeronaves">
+                    <article class="cartao-aeronave">
+                        <div class="imagem-icone">🚁</div>
+                        <div>
+                            <h2>Helicóptero Executivo</h2>
+                            <p>4 a 6 passageiros</p>
+                            <p>Trajetos curtos</p>
+                            <strong class="preco">R$ 8.900</strong>
+                            <a class="botao-selecionar" href="pagamentos.html">Selecionar</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="secao-aeronaves" id="jatos">
+                <h2 class="titulo-lista">Jatos privados</h2>
+                <div class="lista-aeronaves">
+                    <article class="cartao-aeronave">
+                        <div class="imagem-icone">🛩️</div>
+                        <div>
+                            <h2>Light Jet</h2>
+                            <p>6 a 8 passageiros</p>
+                            <p>Até 800 km/h</p>
+                            <strong class="preco">R$ 32.000</strong>
+                            <a class="botao-selecionar" href="pagamentos.html">Selecionar</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <nav class="menu-celular" aria-label="Navegação para celular">
+            <a href="index.html"><span>⌂</span>início</a>
+            <a href="reservar.html"><span>✈</span>agendamento</a>
+            <a class="ativo" href="aeronaves.html"><span>▤</span>aeronaves</a>
+            <a href="viagens.html"><span>▣</span>viagens</a>
+        </nav>
+    </div>
+</body>
+</html>

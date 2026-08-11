@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aeris - plataforma de fretamento aéreo sob demanda.">
+    <title>Aeris | Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="estrutura-site">
+        <header class="cabecalho">
+            <div class="conteudo-cabecalho">
+                <div class="area-marca">
+                    <a href="index.html">
+                        <img src="assets/img/logo-aeris.png" alt="Logo da Aeris">
+                    </a>
+                    <a class="botao-notificacao" href="#notificacoes" aria-label="Ir para notificações">🔔</a>
+                </div>
+
+                <nav class="menu-computador" aria-label="Navegação principal">
+                    <a class="ativo" href="index.html">Início</a>
+                    <a href="reservar.html">Agendamento</a>
+                    <a href="aeronaves.html">Aeronaves</a>
+                    <a href="viagens.html">Viagens</a>
+                </nav>
+                <a class="usuario" href="#membro">
+                    <span>👤</span>
+                    <div>
+                        <strong>Sérgio Luiz</strong>
+                        <small>VIP</small>
+                    </div>
+                </a>
+            </div>
+        </header>
+
+        <main class="conteudo-principal">
+            <div class="grade-painel">
+                <section class="painel-principal">
+                    <div class="boas-vindas">
+                        <div>
+                            <span class="texto-pequeno">Bem vindo de volta!</span>
+                            <h1>Para onde,<br>Sérgio Luiz</h1>
+                        </div>
+                    </div>
+
+                    <form class="cartao-reserva" action="aeronaves.html">
+                        <div class="campo">
+                            <label for="origem">📍 de</label>
+                            <input type="text" id="origem" name="origem" placeholder="Ex.: Porto Alegre - RS" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="destino">📍 para</label>
+                            <input type="text" id="destino" name="destino" placeholder="Ex.: Rio de Janeiro - RJ" required>
+                        </div>
+
+                        <div class="linha-campos">
+                            <div class="campo">
+                                <label for="data">data</label>
+                                <input type="date" id="data" name="data" required>
+                            </div>
+                            <div class="campo">
+                                <label for="passageiros">passageiros</label>
+                                <input type="number" id="passageiros" name="passageiros" min="1" max="20" value="2" required>
+                            </div>
+                        </div>
+
+                        <button class="botao-principal" type="submit">Procurar aeronaves disponíveis</button>
+                    </form>
+
+                    <div class="titulo-secao">
+                        <h2>Viagens recentes</h2>
+                        <a href="viagens.html">Ver todas</a>
+                    </div>
+
+                    <div class="lista-viagens">
+                        <article class="cartao-viagem">
+                            <div class="situacao-viagem">
+                                <span class="situacao-concluida">COMPLETA</span>
+                                <time datetime="2026-01-12">12 jan. 2026</time>
+                            </div>
+                            <h3>TEB → VNY</h3>
+                            <p>King Air B200</p>
+                            <small>👤 2 passageiros</small>
+                        </article>
+
+                        <article class="cartao-viagem">
+                            <div class="situacao-viagem">
+                                <span class="situacao-pendente">PENDENTE</span>
+                                <time datetime="2026-09-20">20 set. 2026</time>
+                            </div>
+                            <h3>MIA → NAS</h3>
+                            <p>Cessna Caravan</p>
+                            <small>👤 4 passageiros</small>
+                        </article>
+                    </div>
+                </section>
+
+                <aside class="area-lateral">
+                    <section class="cartao-membro" id="membro">
+                        <div>
+                            <small>nível de membro</small>
+                            <h2>Aeris Platinum</h2>
+                            <span class="selo-vip">VIP</span>
+                        </div>
+                        <div class="milhas">
+                            <strong>12.450</strong>
+                            <small>milhas ganhas</small>
+                        </div>
+                    </section>
+
+                    <section class="atalhos" aria-label="Acessos rápidos">
+                        <a href="reservar.html"><span>✈</span><strong>nova viagem</strong></a>
+                        <a href="#clima"><span>☀</span><strong>clima</strong></a>
+                        <a href="#notificacoes"><span>🔔</span><strong>notificações</strong></a>
+                        <a href="viagens.html"><span>★</span><strong>milhas</strong></a>
+                    </section>
+
+                    <div class="titulo-secao" id="clima">
+                        <h2>Melhores dias para viajar</h2>
+                    </div>
+
+                    <section class="grade-clima">
+                        <article class="cartao-clima recomendado">
+                            <div><h3>Qua</h3><span>☀️</span></div>
+                            <p>24°C • vento leve</p>
+                            <small class="clima-bom">RECOMENDADO</small>
+                        </article>
+                        <article class="cartao-clima">
+                            <div><h3>Qui</h3><span>🌤️</span></div>
+                            <p>22°C • poucas nuvens</p>
+                            <small class="clima-bom">BOM</small>
+                        </article>
+                        <article class="cartao-clima">
+                            <div><h3>Sex</h3><span>🌧️</span></div>
+                            <p>19°C • chuva</p>
+                            <small class="clima-atencao">ATENÇÃO</small>
+                        </article>
+                    </section>
+
+                    <section class="notificacoes" id="notificacoes">
+                        <div class="titulo-secao">
+                            <h2>Notificações</h2>
+                        </div>
+                        <article>
+                            <span>✈</span>
+                            <div><strong>Reserva confirmada</strong><p>Seu voo POA → GRU está confirmado.</p></div>
+                        </article>
+                        <article>
+                            <span>★</span>
+                            <div><strong>Milhas adicionadas</strong><p>Você recebeu 2.180 milhas na última viagem.</p></div>
+                        </article>
+                    </section>
+                </aside>
+            </div>
+        </main>
+        <nav class="menu-celular" aria-label="Navegação para celular">
+            <a class="ativo" href="index.html"><span>⌂</span>início</a>
+            <a href="reservar.html"><span>✈</span>agendamento</a>
+            <a href="aeronaves.html"><span>▤</span>aeronaves</a>
+            <a href="viagens.html"><span>▣</span>viagens</a>
+        </nav>
+    </div>
+</body>
+</html>
