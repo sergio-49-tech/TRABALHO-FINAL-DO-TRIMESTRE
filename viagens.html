@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Histórico e próximas viagens da Aeris.">
+    <title>Aeris | Viagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="estrutura-site">
+        <header class="cabecalho">
+            <div class="conteudo-cabecalho">
+                <div class="area-marca">
+                    <a href="index.html"><img src="assets/img/logo-aeris.png" alt="Logo da Aeris"></a>
+                    <a class="botao-notificacao" href="index.html#notificacoes" aria-label="Abrir notificações">🔔</a>
+                </div>
+
+                <nav class="menu-computador" aria-label="Navegação principal">
+                    <a href="index.html">Início</a>
+                    <a href="reservar.html">Agendamento</a>
+                    <a href="aeronaves.html">Aeronaves</a>
+                    <a class="ativo" href="viagens.html">Viagens</a>
+                </nav>
+
+                <a class="usuario" href="index.html#membro">
+                    <span>👤</span>
+                    <div><strong>Sérgio Luiz</strong><small>VIP</small></div>
+                </a>
+            </div>
+        </header>
+
+        <main class="conteudo-principal">
+            <section class="caixa-pagina">
+                <span class="texto-pequeno">Sua conta</span>
+                <h1 class="titulo-pagina">Viagens</h1>
+                <p class="subtitulo-pagina">Acompanhe suas próximas viagens e o histórico de voos.</p>
+            </section>
+
+            <div class="titulo-secao">
+                <h2>Próximas</h2>
+                <a href="reservar.html">Nova viagem</a>
+            </div>
+
+            <section class="grade-viagens">
+                <article class="cartao-informacao">
+                    <span class="situacao-pendente">PENDENTE</span>
+                    <h2>MIA → NAS</h2>
+                    <p>20 de setembro de 2026</p>
+                    <p>Cessna Caravan • 4 passageiros</p>
+                    <a class="atalho-pequeno" href="pagamentos.html">Ver pagamento</a>
+                </article>
+
+                <article class="cartao-informacao">
+                    <span class="situacao-concluida">CONFIRMADA</span>
+                    <h2>POA → GRU</h2>
+                    <p>06 de outubro de 2026</p>
+                    <p>King Air B200 • 3 passageiros</p>
+                    <small>Reserva confirmada</small>
+                </article>
+            </section>
+
+            <div class="titulo-secao">
+                <h2>Histórico</h2>
+            </div>
+
+            <section class="grade-viagens">
+                <article class="cartao-informacao">
+                    <span class="situacao-concluida">COMPLETA</span>
+                    <h2>TEB → VNY</h2>
+                    <p>12 de janeiro de 2026</p>
+                    <p>King Air B200 • 2 passageiros</p>
+                    <small>+2.180 milhas Aeris</small>
+                </article>
+
+                <article class="cartao-informacao">
+                    <span class="situacao-cancelada">CANCELADA</span>
+                    <h2>CGH → SDU</h2>
+                    <p>03 de março de 2026</p>
+                    <p>Light Jet • 2 passageiros</p>
+                    <small>Viagem cancelada</small>
+                </article>
+            </section>
+        </main>
+        <nav class="menu-celular" aria-label="Navegação para celular">
+            <a href="index.html"><span>⌂</span>início</a>
+            <a href="reservar.html"><span>✈</span>agendamento</a>
+            <a href="aeronaves.html"><span>▤</span>aeronaves</a>
+            <a class="ativo" href="viagens.html"><span>▣</span>viagens</a>
+        </nav>
+    </div>
+</body>
+</html>
